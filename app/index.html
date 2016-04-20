@@ -11,7 +11,11 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/spinner.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <!-- endbuild -->
   </head>
   <body ng-app="mySiteApp">
@@ -20,33 +24,38 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+    <header>
+      <h1 class="header-item" ng-href="/">Collin Barnwell</h1>
+      <h3 class="header-item" ng-href="/about">About</h3>
+      <h3 class="header-item">Another thing</h3>
+      <h3 class="header-item">Another thing</h3>
+      <h3 class="header-item">Another thing</h3>
 
-            <a class="navbar-brand" href="#/">mySite</a>
-          </div>
 
-          <div class="collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-            </ul>
-          </div>
-        </div>
+      <div id="spin-holder">
+	<div id="spinner">
+	  <div class="spinning-block" id="spin1"></div>
+	  <div class="spinning-block" id="spin2"></div>
+	  <div class="spinning-block" id="spin3"></div>
+	  <div class="spinning-block" id="spin4"></div>
+	  <div class="spinning-block" id="spin5"></div>
+	  <div class="spinning-block" id="spin6"></div>
+	  <div class="spinning-block" id="spin7"></div>
+	  <div class="spinning-block" id="spin8"></div>
+	</div>
       </div>
-    </div>
+    </header>
 
     <div class="container">
     <div ng-view=""></div>
+
+
+
     </div>
 
     <div class="footer">
       <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p>~ Collin</p>
       </div>
     </div>
 
@@ -64,6 +73,13 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -71,6 +87,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         <!-- endbuild -->
 </body>
 </html>
