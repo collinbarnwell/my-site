@@ -20,55 +20,54 @@
   </head>
   <body ng-app="mySiteApp">
     <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
 
     <!-- Add your site or application content here -->
-    <header>
-      <h1 class="header-item"><a ng-href="/">Collin Barnwell</a></h1>
-      <h3 class="header-item"><a ng-href="/#/about">About</a></h3>
-      <h3 class="header-item"><a>Another thing</a></h3>
-      <h3 class="header-item"><a>Another thing</a></h3>
-      <h3 class="header-item"><a>Another thing</a></h3>
+    <div id="wrapper">
+      <header>
+	<h1 class="header-item"><a ng-href="/">Collin Barnwell</a></h1>
+	<h3 class="header-item"><a ng-href="/#/about">About</a></h3>
+	<h3 class="header-item"><a>Another thing</a></h3>
+	<h3 class="header-item"><a>Another thing</a></h3>
+	<h3 class="header-item"><a>Another thing</a></h3>
 
 
-      <div id="spin-holder">
-	<div id="spinner">
-	  <div class="spinning-block" id="spin1"></div>
-	  <div class="spinning-block" id="spin2"></div>
-	  <div class="spinning-block" id="spin3"></div>
-	  <div class="spinning-block" id="spin4"></div>
-	  <div class="spinning-block" id="spin5"></div>
-	  <div class="spinning-block" id="spin6"></div>
-	  <div class="spinning-block" id="spin7"></div>
-	  <div class="spinning-block" id="spin8"></div>
+	<div id="spin-holder">
+	  <div id="spinner">
+	    <div class="spinning-block" id="spin1"></div>
+	    <div class="spinning-block" id="spin2"></div>
+	    <div class="spinning-block" id="spin3"></div>
+	    <div class="spinning-block" id="spin4"></div>
+	    <div class="spinning-block" id="spin5"></div>
+	    <div class="spinning-block" id="spin6"></div>
+	    <div class="spinning-block" id="spin7"></div>
+	    <div class="spinning-block" id="spin8"></div>
+	  </div>
 	</div>
+      </header>
+
+      <div id="content" class="container">
+	<div ng-view=""></div>
       </div>
-    </header>
 
-    <div class="container">
-      <div ng-view=""></div>
-
-
-
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <p>~ Collin</p>
+      <div class="footer">
+	<div class="container">
+          <p>~ Collin</p>
+	</div>
       </div>
     </div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script>
+      !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+      (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+      r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+      }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
     </script>
 
     <!-- build:js(.) scripts/vendor.js -->
