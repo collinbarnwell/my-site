@@ -44,7 +44,6 @@ header {
 /* Custom page footer */
 .footer {
   padding-top: 5px;
-  color: $accent3;
   border-top: solid white;
   position: absolute;
   bottom: 0px;
@@ -66,6 +65,15 @@ header {
     padding-top: 20px;
     width: 900px;
     margin: auto;
+    p {
+	line-height: 200%;
+    }
+    h1 {
+	text-decoration: underline;
+    }
+    a {
+	color: inherit;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -76,8 +84,24 @@ header {
 
 .header-item {
     padding: 4px;
+    margin: 15px 0;
     &:hover {
 	border: solid;
 	padding: 1px;
     }
+}
+
+header {
+    a {
+	text-decoration: none;
+	color: inherit;
+    }
+}
+
+.accent-color {
+    color: $accent8;
+}
+
+.accent-color-secondary {
+    color: $accent1;
 }

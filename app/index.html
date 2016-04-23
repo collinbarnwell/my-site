@@ -25,11 +25,11 @@
 
     <!-- Add your site or application content here -->
     <header>
-      <h1 class="header-item" ng-href="/">Collin Barnwell</h1>
-      <h3 class="header-item" ng-href="/about">About</h3>
-      <h3 class="header-item">Another thing</h3>
-      <h3 class="header-item">Another thing</h3>
-      <h3 class="header-item">Another thing</h3>
+      <h1 class="header-item"><a ng-href="/">Collin Barnwell</a></h1>
+      <h3 class="header-item"><a ng-href="/#/about">About</a></h3>
+      <h3 class="header-item"><a>Another thing</a></h3>
+      <h3 class="header-item"><a>Another thing</a></h3>
+      <h3 class="header-item"><a>Another thing</a></h3>
 
 
       <div id="spin-holder">
@@ -47,7 +47,7 @@
     </header>
 
     <div class="container">
-    <div ng-view=""></div>
+      <div ng-view=""></div>
 
 
 
@@ -83,11 +83,11 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        <!-- endbuild -->
-</body>
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <!-- endbuild -->
+  </body>
 </html>
