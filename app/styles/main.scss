@@ -114,3 +114,12 @@ header {
 .accent-color-secondary {
     color: $accent1;
 }
+
+.content-card {
+    border: solid;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    p {
+	line-height: 100%;
+    }
+}
