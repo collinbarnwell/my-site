@@ -8,6 +8,7 @@
  *
  * Main module of the application.
  */
+
 angular
   .module('mySiteApp', [
     'ngAnimate',
@@ -17,7 +18,7 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
 	redirectTo: '/about'
@@ -38,4 +39,6 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+
+    // $locationProvider.html5Mode(true);
   });
