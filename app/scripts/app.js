@@ -36,6 +36,11 @@ angular
         controller: 'CsProjectsCtrl',
         controllerAs: 'csProjects'
       })
+      .when('/digital-humanities', {
+        templateUrl: 'views/digital-humanities.html',
+        controller: 'DigitalHumanitiesCtrl',
+        controllerAs: 'digitalHumanities'
+      })
       .otherwise({
         redirectTo: '/'
       });

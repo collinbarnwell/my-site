@@ -52,6 +52,8 @@ header {
 
 /* Custom page footer */
 .footer {
+    background: url("/images/night-sky.jpg");
+    background-size: cover;
   padding-top: 5px;
   border-top: solid white;
   position: absolute;
@@ -101,6 +103,8 @@ header {
 }
 
 header {
+    background: url("/images/night-sky.jpg");
+    background-size: cover;
     a {
 	text-decoration: none;
 	color: inherit;
